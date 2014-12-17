@@ -73,18 +73,18 @@ cat("# CODE BOOK", file = zz, sep = "\n", append = T)
 cat(" ", file = zz, sep = "\n", append = T)
 for(i in names(dtst2)){
     cat(paste("##", i), file = zz, sep = "\n", append = T)
-    cat(paste("Class =", class(dtst2[, i])), file = zz, sep = "\n", append = T)
+    cat(paste("* Class =", class(dtst2[, i])), file = zz, sep = "\n", append = T)
     if(is.numeric(dtst2[, i])) {
-        cat(paste("Min =", min(dtst2[, i])), file = zz, sep = "\n", append = T)
-        cat(paste("Max =", max(dtst2[, i])), file = zz, sep = "\n", append = T) 
-        cat("Mean of signals that were used to estimate variables of the feature vector for each pattern: '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.", file = zz, sep = "\n\n", append = T)
+        cat(paste("* Min =", min(dtst2[, i])), file = zz, sep = "\n", append = T)
+        cat(paste("* Max =", max(dtst2[, i])), file = zz, sep = "\n", append = T) 
+        cat("* Mean of signals that were used to estimate variables of the feature vector for each pattern: '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.", file = zz, sep = "\n\n", append = T)
         cat(" ", file = zz, sep = "\n", append = T)
     } 
     else
     {
-        cat(paste("Number of levels =", nlevels(dtst2[, i])), file = zz, sep = "\n", append = T)
-        cat(paste("Levels : ", levels(dtst2[, i])), file = zz, sep = "\n", append = T)
-        cat("WRITE BY HAND!!!", file = zz, sep = "\n", append = T)
+        cat(paste("* Number of levels =", nlevels(dtst2[, i])), file = zz, sep = "\n", append = T)
+        cat(paste("* Levels : ", levels(dtst2[, i])), file = zz, sep = "\n", append = T)
+        cat("* WRITE BY HAND!!!", file = zz, sep = "\n", append = T)
         cat(" ", file = zz, sep = "\n\n", append = T)
     }        
 }
