@@ -20,10 +20,10 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 # CODE BOOK
  
 ## Subject
-Class = integer
-Min = 1
-Max = 30
-An identifier of the subject who carried out the experiment.
+* Class = integer
+* Min = 1
+* Max = 30
+* An identifier of the subject who carried out the experiment.
  
 ## Activity
 Class = factor
